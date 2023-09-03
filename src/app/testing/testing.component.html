@@ -1,0 +1,96 @@
+<p>testing works!</p>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megadropdown Menu</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Custom CSS for the Megadropdown Menu -->
+    <style>
+        /* Style the megadropdown container */
+        .megadropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: none;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        /* Style the rows and columns */
+        .megadropdown-row {
+            /* display: flex;
+            flex-direction: column;
+            justify-content: space-between; */
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .megadropdown-col {
+            /* flex: 1; */
+            padding: 0 10px;
+        }
+
+        /* Show the megadropdown on hover */
+        .dropdown:hover .megadropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Categories
+            </button>
+            <div class="megadropdown" aria-labelledby="dropdownMenuButton">
+                <!-- Row 1 -->
+                <div class="megadropdown-row">
+                    <div class="megadropdown-col">
+                        <h5>Category 1</h5>
+                        <ul>
+                            <li>Subcategory 1.1</li>
+                            <li>Subcategory 1.2</li>
+                        </ul>
+                    </div>
+                    <div class="megadropdown-col">
+                        <h5>Category 2</h5>
+                        <ul>
+                            <li>Subcategory 2.1</li>
+                            <li>Subcategory 2.2</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Row 2 -->
+                <div class="megadropdown-row">
+                    <div class="megadropdown-col">
+                        <h5>Category 3</h5>
+                        <ul>
+                            <li>Subcategory 3.1</li>
+                            <li>Subcategory 3.2</li>
+                        </ul>
+                    </div>
+                    <div class="megadropdown-col">
+                        <h5>Category 4</h5>
+                        <ul>
+                            <li>Subcategory 4.1</li>
+                            <li>Subcategory 4.2</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Add more rows as needed -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS (popper.js is required) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
